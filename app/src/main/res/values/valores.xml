@@ -2,6 +2,8 @@
 <resources>
     <string-array name="hobbies_array">
         <item>Deporte</item>
-
+        <item>Lectura</item>
+        <item>Cine</item>
     </string-array>
+    <item name="valoresSpinner" type="id" />
 </resources>
