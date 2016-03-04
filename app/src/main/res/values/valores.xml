@@ -4,6 +4,11 @@
         <item>Deporte</item>
         <item>Lectura</item>
         <item>Cine</item>
+        <item>Comer</item>
+        <item>Dormir</item>
+        <item>Caminar</item>
+        <item>Correr</item>
+        <item>Bailar</item>
     </string-array>
     <item name="valoresSpinner" type="id" />
 </resources>

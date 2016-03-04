@@ -39,30 +39,37 @@
                 android:id="@+id/editText2"
                 android:layout_below="@+id/editText" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Femenino"
-                android:id="@+id/radioButton"
-                android:layout_alignBottom="@+id/editText2"
-                android:layout_alignStart="@+id/radioButton2"
-                android:checked="false" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/editText">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Masculino"
-                android:id="@+id/radioButton2"
-                android:layout_above="@+id/editText2"
-                android:layout_alignParentEnd="true"
-                android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:id="@+id/radioButton"
+                    android:layout_alignBottom="@+id/editText2"
+                    android:layout_alignStart="@+id/radioButton2"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:id="@+id/radioButton2"
+                    android:layout_above="@+id/editText2"
+                    android:layout_alignParentEnd="true"
+                    android:checked="false" />
+            </RadioGroup>
 
             <AutoCompleteTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pais"
                 android:id="@+id/autoCompleteTextView"
-                android:layout_below="@+id/radioButton"
+                android:layout_above="@+id/editText5"
                 android:layout_alignParentStart="true"
                 android:layout_toStartOf="@+id/editText3" />
 
@@ -73,8 +80,8 @@
                 android:ems="10"
                 android:id="@+id/editText3"
                 android:text="Teléfono"
-                android:layout_below="@+id/radioButton"
-                android:layout_alignEnd="@+id/radioButton" />
+                android:layout_below="@+id/editText2"
+                android:layout_alignParentEnd="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -82,10 +89,10 @@
                 android:inputType="textPostalAddress"
                 android:ems="10"
                 android:id="@+id/editText4"
-                android:layout_below="@+id/autoCompleteTextView"
-                android:layout_alignParentStart="true"
                 android:text="Dirección"
-                android:layout_alignEnd="@+id/editText3" />
+                android:layout_below="@+id/editText5"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/checkBox" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -93,10 +100,10 @@
                 android:inputType="textEmailAddress"
                 android:ems="10"
                 android:id="@+id/editText5"
-                android:layout_below="@+id/editText4"
+                android:text="Email"
+                android:layout_below="@+id/editText3"
                 android:layout_alignParentStart="true"
-                android:layout_alignEnd="@+id/editText4"
-                android:text="Email" />
+                android:layout_toStartOf="@+id/checkBox" />
 
             <Spinner
                 android:layout_width="wrap_content"
@@ -105,7 +112,7 @@
                 android:spinnerMode="dropdown"
                 android:entries="@id/valoresSpinner"
                 android:minHeight="30dp"
-                android:layout_alignTop="@+id/labelHobbies"
+                android:layout_below="@+id/editText4"
                 android:layout_toEndOf="@+id/autoCompleteTextView" />
 
             <CheckBox
@@ -114,9 +121,9 @@
                 android:text="Favorito"
                 android:id="@+id/checkBox"
                 android:checked="false"
-                android:layout_alignTop="@+id/spinner"
-                android:layout_alignEnd="@+id/editText5"
-                android:layout_alignStart="@+id/radioButton2" />
+                android:layout_alignTop="@+id/editText5"
+                android:layout_above="@+id/editText4"
+                android:layout_alignParentEnd="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -124,7 +131,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Hobbies"
                 android:id="@+id/labelHobbies"
-                android:layout_below="@+id/editText5"
+                android:layout_above="@+id/datePicker"
                 android:layout_alignParentStart="true" />
 
             <DatePicker
